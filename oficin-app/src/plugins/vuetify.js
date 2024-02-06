@@ -1,10 +1,9 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
+import { VCalendar } from 'vuetify/lib/labs/components.mjs';
 import 'vuetify/styles'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
 
-export default createVuetify(
-  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
-)
+export default createVuetify({ components: { VCalendar } });

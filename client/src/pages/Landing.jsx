@@ -1,4 +1,4 @@
-import { appConfig, tenantConfig } from "../config/appConfig";
+import { appConfig, clientConfig } from "../config/appConfig";
 
 export default function Landing({ onLogin }) {
   return (
@@ -6,8 +6,8 @@ export default function Landing({ onLogin }) {
       <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-4">
         <h1 className="h2 mb-0">{appConfig.name} for</h1>
         <img
-          src={tenantConfig.logoUrl}
-          alt={`${tenantConfig.companyName} logo`}
+          src={clientConfig.logoUrl}
+          alt={`${clientConfig.companyName} logo`}
           height="48"
         />
       </div>
